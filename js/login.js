@@ -23,7 +23,7 @@ loginForm.addEventListener('submit', async (e) => {
       }));
 
       alert(`Welcome back, ${userData.name}!`);
-      window.location.href = "home.html";
+      window.location.href = "index.html";
     } else {
       alert("User data not found. Please sign up again.");
     }
