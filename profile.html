@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Campus Bites</title>
+  <link rel="icon" href="img/core-img/campus-bites.jpg">
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="css/responsive/responsive.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff8f3;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .profile-menu {
+      width: 360px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin: 60px auto;
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .profile-header {
+      background-color: #d62300;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .profile-header h5 {
+      margin-bottom: 5px;
+    }
+
+    .profile-header p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-item {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #f1f1f1;
+      transition: 0.2s;
+    }
+
+    .menu-item:hover {
+      background-color: #fff0ea;
+      color: #d62300;
+    }
+
+    .menu-item i {
+      font-size: 1.2rem;
+      width: 25px;
+      text-align: center;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #999;
+      padding: 10px 0;
+    }
+
+    .footer-note span {
+      color: #d62300;
+    }
+    .btn-close {
+  filter: invert(1) grayscale(100%) brightness(0);
+  opacity: 0.8;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+/* Force visible "X" for modal close button */
+.btn-close {
+  background: none !important;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #000 !important;      /* black cross for light background */
+  opacity: 0.8;
+}
+
+.btn-close::after {
+  content: "×";
+  font-weight: 700;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+  <header class="header_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="logo_area text-center" style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+            <img src="img/bg-img/canteen review logo.jpg" alt="logo" style="height: 90px; width: auto; object-fit: contain;">
+            <a href="home.html" class="yummy-logo" style="font-size: 46px; text-decoration: none; color: #000; font-weight: 500;">Campus Bites</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-nav" aria-controls="yummyfood-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
+              <ul class="navbar-nav" id="yummy-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="branch.html">Branch</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="polls.html">Polls</a></li>
+                <li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
+                <li class="nav-item active"><a class="nav-link" href="profile.html">Profile</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="profile-menu">
+    <div class="profile-header">
+      <img src="https://ui-avatars.com/api/?name=Dhanavi+Shah&background=fff&color=d62300" alt="User Avatar" class="rounded-circle mb-2" width="70">
+      <h5>Dhanavi Shah</h5>
+      <p>@dhanavishah1131</p>
+    </div>
+
+    <ul class="menu-list">
+  <ul class="list-unstyled">
+<a href="#" class="menu-item" data-bs-toggle="modal" data-bs-target="#editDetailsModal">
+  <i class="fa-solid fa-pen-to-square"></i> Edit Details
+</a>
+
+<a href="#" class="menu-item" data-bs-toggle="modal" data-bs-target="#changeBranchModal">
+  <i class="fa-solid fa-code-branch"></i> Change Branch
+</a>
+
+<a href="#" class="menu-item" id="reviewHistoryBtn" data-bs-toggle="modal" data-bs-target="#reviewHistoryModal">
+  <i class="fa-solid fa-clock-rotate-left"></i> My Review History
+</a>
+
+
+<a href="#" class="menu-item">
+  <i class="fa-solid fa-right-left"></i> Switch Accounts
+</a>
+
+<a href="#" class="menu-item">
+  <i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out
+</a>
+
+</ul>
+  <li><a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal" class="menu-item"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+</ul>
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="aboutModalLabel">About Campus Bites</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Campus Bites</strong> is your one-stop canteen review hub! 🌮🍕</p>
+        <p>Here you can review your campus dishes, vote in polls, check event updates, and compete on the leaderboard!</p>
+        <p class="text-muted">Developed by students, for students.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Edit Details Modal -->
+<div class="modal fade" id="editDetailsModal" tabindex="-1" aria-labelledby="editDetailsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 p-3">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="editDetailsLabel">Edit Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <form id="editDetailsForm">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="editName" class="form-label">Name</label>
+            <input type="text" id="editName" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="editUsername" class="form-label">Username</label>
+            <input type="text" id="editUsername" class="form-control" required>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="submit" class="btn btn-danger w-100 rounded-pill">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Change Branch Modal -->
+<div class="modal fade" id="changeBranchModal" tabindex="-1" aria-labelledby="changeBranchLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 p-3">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="changeBranchLabel">Change Branch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <form id="branchForm">
+        <div class="modal-body">
+          <label for="branchSelect" class="form-label">Select Branch</label>
+          <select id="branchSelect" class="form-select" required>
+            <option value="">Choose branch</option>
+            <option value="MPSTME">MPSTME</option>
+            <option value="NM">NM</option>
+            <option value="Late MPSTME">Late MPSTME</option>
+          </select>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="submit" class="btn btn-danger w-100 rounded-pill">Update Branch</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- My Review History Modal -->
+<div class="modal fade" id="reviewHistoryModal" tabindex="-1" aria-labelledby="reviewHistoryLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 p-3">
+      <div class="modal-header border-0 bg-danger text-white">
+        <h5 class="modal-title" id="reviewHistoryLabel">My Review History</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="reviewHistoryContainer">
+        <p class="text-muted">Loading your reviews...</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <div class="footer-note">
+      © 2025 <span>Campus Bites</span>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+    import { getFirestore, doc, getDoc, updateDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBy5yfr3yYuMSDFHWwp0LdRhQASe2EKx78",
+      authDomain: "campusbites-a7d47.firebaseapp.com",
+      projectId: "campusbites-a7d47",
+      storageBucket: "campusbites-a7d47.appspot.com",
+      messagingSenderId: "287799383807",
+      appId: "1:287799383807:web:80dcc43f75b5e226241eca"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    const profileHeader = document.querySelector(".profile-header");
+    const editForm = document.getElementById("editDetailsForm");
+    const branchForm = document.getElementById("branchForm");
+    const logoutLink = document.querySelector(".menu-item i.fa-arrow-right-from-bracket")?.closest("a");
+
+    let currentUser = null;
+    let isLoggingOut = false;
+
+    // Load user profile
+    onAuthStateChanged(auth, async (user) => {
+      if (isLoggingOut) return;
+      if (user) {
+        currentUser = user;
+        const docRef = doc(db, "loggedInUsers", user.uid);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          profileHeader.querySelector("h5").textContent = data.name || "User";
+          profileHeader.querySelector("p").textContent = data.username ? "@" + data.username : data.email || "";
+          profileHeader.querySelector("img").src =
+        `https://ui-avatars.com/api/?name=${encodeURIComponent(data.name || "User")}&background=fff&color=d62300`;
+
+          document.getElementById("editName").value = data.name || "";
+          document.getElementById("editUsername").value = data.username || "";
+        }
+      } else if (!isLoggingOut) {
+        Swal.fire({
+          icon: "warning",
+          title: "Login Required",
+          text: "Please log in to access your profile.",
+          confirmButtonColor: "#d62300"
+        }).then(() => {
+          window.location.href = "login.html";
+        });
+      }
+    });
+
+      // Edit Details
+    editForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!currentUser) {
+        return Swal.fire("Not logged in", "Please log in first!", "warning");
+      }
+
+      const newName = document.getElementById("editName").value.trim();
+      const newUsername = document.getElementById("editUsername").value.trim();
+
+      try {
+        await updateDoc(doc(db, "loggedInUsers", currentUser.uid), {
+        name: newName,
+        username: newUsername
+      });
+
+      Swal.fire({
+        icon: "success",
+        title: "Updated!",
+        text: "Your details have been updated successfully.",
+        confirmButtonColor: "#d62300"
+      });
+
+      document.querySelector("#editDetailsModal .btn-close").click();
+      profileHeader.querySelector("h5").textContent = newName;
+      profileHeader.querySelector("p").textContent = "@" + newUsername;
+    } catch (err) {
+      Swal.fire("Error", err.message, "error");
+    }
+    });
+
+// 🏫 Change Branch
+branchForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!currentUser) {
+    return Swal.fire("Not logged in", "Please log in first!", "warning");
+  }
+
+  const newBranch = document.getElementById("branchSelect").value;
+  if (!newBranch) return Swal.fire("Select a branch", "Please choose your branch.", "info");
+
+  try {
+    await updateDoc(doc(db, "loggedInUsers", currentUser.uid), { branch: newBranch });
+    Swal.fire({
+      icon: "success",
+      title: "Branch Updated!",
+      text: "Your branch has been changed successfully.",
+      confirmButtonColor: "#d62300"
+    });
+    document.querySelector("#changeBranchModal .btn-close").click();
+  } catch (error) {
+    Swal.fire("Error", error.message, "error");
+  }
+});
+
+// 🔄 Switch Account
+document.querySelector(".fa-right-left").closest("a").addEventListener("click", async (e) => {
+  e.preventDefault();
+  try {
+    isLoggingOut = true;
+    await signOut(auth);
+    Swal.fire({
+      icon: "info",
+      title: "Switch Account",
+      text: "You can now log in with another account.",
+      confirmButtonColor: "#d62300"
+    }).then(() => {
+      window.location.href = "login.html";
+    });
+  } catch (err) {
+    Swal.fire("Error", err.message, "error");
+  }
+});
+
+// 🚪 Logout
+logoutLink.addEventListener("click", async (e) => {
+  e.preventDefault();
+  try {
+    isLoggingOut = true;
+    await signOut(auth);
+    Swal.fire({
+      icon: "success",
+      title: "Logged Out",
+      text: "You have been logged out successfully.",
+      confirmButtonColor: "#d62300"
+    }).then(() => {
+      window.location.href = "login.html";
+    });
+  } catch (err) {
+    Swal.fire("Error", err.message, "error");
+  }
+});
+
+// ⭐ My Review History
+onAuthStateChanged(auth, async (user) => {
+  if (!user) return;
+
+  const reviewsContainer = document.querySelector("#reviewHistoryContainer");
+  reviewsContainer.innerHTML = "<p class='text-muted'>Loading your reviews...</p>";
+
+  try {
+    const querySnapshot = await getDocs(collection(db, "loggedInUsers", user.uid, "reviews"));
+
+    if (querySnapshot.empty) {
+      reviewsContainer.innerHTML = "<p class='text-muted'>You haven't submitted any reviews yet.</p>";
+      return;
+    }
+
+    const reviews = [];
+    querySnapshot.forEach((doc) => reviews.push({ id: doc.id, ...doc.data() }));
+    reviews.sort((a, b) => (b.timestamp?.seconds || 0) - (a.timestamp?.seconds || 0));
+
+    reviewsContainer.innerHTML = `
+      <div class="p-3">
+        ${reviews.map(r => {
+          const date = r.timestamp?.toDate
+            ? r.timestamp.toDate().toLocaleString()
+            : "Unknown date";
+          return `
+            <div class="review-card mb-3 p-3 border rounded shadow-sm bg-white d-flex justify-content-between align-items-start">
+              <div>
+                <h6 class="fw-bold text-danger mb-1">${r.dishName || "Unnamed Dish"}</h6>
+                <p class="mb-1">${r.reviewText || "No review text provided."}</p>
+                <p class="text-warning mb-0"><i class="fa-solid fa-star"></i> ${r.rating || "?"} / 5</p>
+              </div>
+              <small class="text-muted" style="min-width: 130px; text-align: right;">${date}</small>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    `;
+  } catch (err) {
+    Swal.fire("Error", "Couldn't load your reviews.", "error");
+  }
+});
+</script>
+</body>
+</html>
+

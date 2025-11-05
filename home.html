@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Campus Bites - University Canteen Review Portal">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Campus Bites | Home</title>
+  <link rel="icon" href="img/core-img/campus-bites.jpg">
+  <link href="style.css" rel="stylesheet">
+  <link href="css/responsive/responsive.css" rel="stylesheet">
+
+  <style>
+    /* ===== GENERAL ===== */
+    body {
+      background-color: #fff8f3;
+    }
+    h2.section-title {
+      color: #d62300;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      background: linear-gradient(rgba(214,35,0,0.75), rgba(214,35,0,0.75)),
+                  url('img/bg-canteen.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 120px 0;
+      text-align: center;
+    }
+    #hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .header-area img{
+      width: 20px;
+      height: 20px;
+    }
+
+    /* ===== BEST DISH ===== */
+    #best-dish {
+      background: #fff;
+      padding: 80px 0;
+    }
+    #best-dish .dish-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    #best-dish .dish-card:hover {
+      transform: scale(1.03);
+    }
+    #best-dish img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    #best-dish .dish-info {
+      padding: 20px;
+    }
+
+    /* ===== GALLERY ===== */
+    #gallery {
+      background: #fff8f3;
+      padding: 80px 0;
+    }
+    #gallery .gallery-img {
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    #gallery .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #fff0ea;
+      padding: 40px 0;
+      text-align: center;
+    }
+    footer h5 {
+      color: #d62300;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    footer a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 6px;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: #d62300;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="logo_area text-center" style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+            <img src="img/bg-img/canteen review logo.jpg" alt="logo" style="height: 90px; width: auto; object-fit: contain;">
+            <a href="home.html" class="yummy-logo" style="font-size: 46px; text-decoration: none; color: #000; font-weight: 500;">Campus Bites</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-nav" aria-controls="yummyfood-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
+              <ul class="navbar-nav" id="yummy-nav">
+                <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="branch.html">Branch</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="polls.html">Polls</a></li>
+                <li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h1>Welcome to <span style="color:#ffd6cf;">Campus Bites</span></h1>
+      <p>Your one-stop space for canteen reviews, polls, and campus food fun 🍔</p>
+    </div>
+  </section>
+
+  <!-- Best Dish of the Week -->
+  <section id="best-dish">
+    <div class="container text-center">
+      <h2 class="section-title">Best Dish of the Week 🍽️</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="dish-card">
+            <img src="img/dish_of_theweek.jpg" alt="Best Dish">
+            <div class="dish-info">
+              <h4 class="text-danger mb-2">Misal Pav</h4>
+              <p class="text-muted mb-3">Voted by students as the most loved snack this week — Who doesn't like spicy and tasteful misal with pav!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Welcome Post Area Start ****** -->
+    <section class="welcome-post-sliders owl-carousel" style="margin-bottom: 100px;">
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-1.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">Nov 5, 2025</a>
+                </div>
+                <a href="#">
+                    <h5>“Go here for yummy food always” ~Meet Chheda</h5>
+                </a>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-2.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">Oct 31, 2025</a>
+                </div>
+                <a href="#">
+                    <h5>“Must-Try Food + Affordable” ~Dhruv Shah</h5>
+                </a>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-3.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">Oct 28, 2025</a>
+                </div>
+                <a href="#">
+                    <h5>“Love this Canteen!” ~Manya Garg</h5>
+                </a>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-4.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">Nov 3, 2025</a>
+                </div>
+                <a href="#">
+                    <h5>“Best Food Ever” ~Sanika Gojare</h5>
+                </a>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-4.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">Nov 4, 2025</a>
+                </div>
+                <a href="#">
+                    <h5>“This Food touched my Soul” ~Tanisha Patel</h5>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- ****** Welcome Area End ****** -->
+
+  <!-- Image Gallery -->
+  <section id="gallery">
+    <div class="container text-center">
+      <h2 class="section-title">Canteen Moments 📸</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-img">
+            <img src="img/img-gallery/gallery1.jpg" class="img-fluid" alt="Gallery 1">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-img">
+            <img src="img/img-gallery/gallery2.jpeg" class="img-fluid" alt="Gallery 2">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-img">
+            <img src="img/img-gallery/gallery3.jpeg" class="img-fluid" alt="Gallery 3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer mt-auto py-3" style="background-color:#fff0ea;">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>Campus Bites is your digital companion for discovering, reviewing, and celebrating your university’s canteen culture.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Credits</h5>
+          <a href="#">Bootstrap 5</a>
+          <a href="#">jQuery</a>
+          <a href="#">Themewagon Yummy Template</a>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">How to Use (FAQs)</h5>
+<div class="faq-list">
+  <div class="faq-item">
+    <a data-bs-toggle="collapse" href="#faq1" role="button" aria-expanded="false" aria-controls="faq1">
+      How do I add a review? <span class="arrow">&#9654;</span>
+    </a>
+    <div class="collapse" id="faq1">
+      <p class="mt-2">Go to your Branch page → select a dish → click “Add Review” and submit with your rating and comments.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <a data-bs-toggle="collapse" href="#faq2" role="button" aria-expanded="false" aria-controls="faq2">
+      How do polls work? <span class="arrow">&#9654;</span>
+    </a>
+    <div class="collapse" id="faq2">
+      <p class="mt-2">Each week, new polls open for dishes or events. You can vote once per poll using your student ID login.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <a data-bs-toggle="collapse" href="#faq3" role="button" aria-expanded="false" aria-controls="faq3">
+      How can I earn leaderboard points? <span class="arrow">&#9654;</span>
+    </a>
+    <div class="collapse" id="faq3">
+      <p class="mt-2">You earn points for posting reviews, voting in polls, and getting likes. Top foodies appear on the leaderboard!</p>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+      <hr style="margin: 30px 0; border-color:#d62300;">
+      <p class="mb-0" style="color:#333;"> &copy; 2025 <strong><span>Campus Bites</span></strong>. All Rights Reserved
+      </p>
+      <p class="mt-1 small" style="color:#d62300;">Made with ❤️ for campus foodies</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+   <!-- Jquery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/others/plugins.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- SweetAlert2 Library -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="module">
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBy5yfr3yYuMSDFHWwp0LdRhQASe2EKx78",
+  authDomain: "campusbites-a7d47.firebaseapp.com",
+  projectId: "campusbites-a7d47",
+  storageBucket: "campusbites-a7d47.appspot.com",
+  messagingSenderId: "287799383807",
+  appId: "1:287799383807:web:80dcc43f75b5e226241eca"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// 🔐 Check login status
+onAuthStateChanged(auth, (user) => {
+  if (!user) {
+    Swal.fire({
+      title: "Login Required",
+      text: "You need to log in to access this page.",
+      icon: "warning",
+      confirmButtonText: "Go to Login",
+      confirmButtonColor: "#d62300",
+      allowOutsideClick: false,
+      backdrop: `rgba(0,0,0,0.6)`
+    }).then(() => {
+      window.location.href = "login.html";
+    });
+  }
+});
+</script>
+</body>
+</html>
+

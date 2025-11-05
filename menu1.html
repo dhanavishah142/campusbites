@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Campus Bites | Menu</title>
+  <link rel="icon" href="img/core-img/campus-bites.jpg">
+  <link href="style.css" rel="stylesheet">
+  <link href="css/responsive/responsive.css" rel="stylesheet">
+</head>
+<style>
+  .top_header_area{
+    background-color: white;
+  }
+  #container{
+    background-color: white;
+  }
+  #register .card {
+  background-color: #fff;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+#register .card:hover {
+  transform: scale(1.02);
+}
+#register input.form-control,
+#register select.form-select {
+  border-radius: 10px;
+}
+#register button.btn {
+  border-radius: 10px;
+  transition: 0.3s;
+  background-color: #d62300;
+  color: #fff;
+}
+#register button.btn:hover {
+  background-color: #b91e00;
+}
+@media (max-width: 991px) {
+  #register .card {
+    margin-bottom: 20px;
+  }
+}
+header{
+  background-color: white;
+  margin-bottom: 50px;
+}
+.form-group mb-3 img{
+  border-radius: 100px;
+  width: auto;
+ 
+}
+h2{
+  text-align: center;
+  color: #d62300;
+  margin-bottom: 50px;
+}
+        footer {
+      background-color: #fff0ea;
+      padding: 40px 0;
+      text-align: center;
+    }
+    footer h5 {
+      color: #d62300;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    footer a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 6px;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: #d62300;
+    }
+    /* Make Bootstrap modal close button visible on light backgrounds */
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(0);
+  opacity: 0.8;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+/* Force visible "X" for modal close button */
+.btn-close {
+  background: none !important;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #000 !important;      /* black cross for light background */
+  opacity: 0.8;
+}
+
+.btn-close::after {
+  content: "×";
+  font-weight: 700;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+.navbar-right a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navbar-right a:hover {
+  color: #fc6c3f;
+}
+.menu-section {
+  margin: 0;
+  padding: 0;
+}
+.review-stars {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.review-stars i {
+  font-size: 1.7rem;
+  color: #ccc; /* default grey */
+  transition: color 0.2s ease-in-out;
+}
+
+.review-stars i.active,
+.review-stars i:hover,
+.review-stars i:hover ~ i {
+  color: #f5c518; /* gold */
+}
+
+
+</style>
+
+ 
+<body>
+  <!-- ****** Top Header Area Start ****** -->
+    <div class="top_header_area">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-7 col-sm-6">
+                    <div class="signup-search-area d-flex align-items-center justify-content-end">
+                     <!-- Search Button Area -->
+<div class="search_button">
+  <a class="searchBtn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+</div>
+
+<!-- Search Form -->
+<div class="search-hidden-form" style="display: none;">
+  <form action="#" method="get">
+    <input type="search" name="search" id="search-anything" placeholder="Search Anything...">
+    <input type="submit" value="" class="d-none">
+    <span class="searchBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
+  </form>
+</div>
+
+                        
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <header class="header_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="logo_area text-center" style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+            <img src="img/bg-img/canteen review logo (white).jpg" alt="logo" style="height: 90px; width: auto; object-fit: contain;">
+            <a href="home.html" class="yummy-logo" style="font-size: 46px; text-decoration: none; color: #000; font-weight: 500;">Campus Bites</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <!-- Left (Toggler button) -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-nav"
+      aria-controls="yummyfood-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i> Menu
+    </button>
+
+    <!-- Centered Menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
+      <ul class="navbar-nav" id="yummy-nav">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="branch.html">Branch</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="polls.html">Poll</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Leaderboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+      </ul>
+    </div>
+
+    <!-- Rightmost Wishlist -->
+    <div class="navbar-right">
+      <a class="nav-link" href="wishlist1.html" style="font-size: larger;">♡</a>
+    </div>
+
+  </div>
+</nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
+<h2 class="menu-heading">Breakfast</h2>
+
+  <section class="register" class="d-flex align-items-center justify-content-center" style="background: #fff8f3;">
+
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Missal Pav</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 42/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/missal pav.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+             
+<button type="button"class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Missal Pav"
+        data-price="42"
+        data-img="img/catagory-img/missal pav.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Idli Sambhar</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 32/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/idli sambhar.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+            
+<button type="button" class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Idli Sambhar"
+        data-price="32"
+        data-img="img/catagory-img/idli sambhar.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+<!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Butter Toast</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 23/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/butter toast.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+<button type="button" class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Butter Toast"
+        data-price="23"
+        data-img="img/catagory-img/butter toast.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Vada Pav</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 19/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/vada pav.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+             
+<button type="button" class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Vada Pav"
+        data-price="19"
+        data-img="img/catagory-img/vada pav.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Potato Poha</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 32/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/potato poha.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+<button type="button" class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Potato Poha"
+        data-price="32"
+        data-img="img/catagory-img/potato poha.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80"style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Idli Fry</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 43/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/idli fry.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+              
+<button type="button" class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Idli Fry"
+        data-price="43"
+        data-img="img/catagory-img/idli fry.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+      
+
+
+    </div>
+  </div>
+</section>
+
+<h2 class="menu-heading">South Indian</h2>
+
+  <section class="register" class="d-flex align-items-center justify-content-center" style="background: #fff8f3;">
+
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Sada Dosa</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 32/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/sada dosa.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+            
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Sada Dosa"
+        data-price="32"
+        data-img="img/catagory-img/sada dosa.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Mysore Masala Dosa</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 60/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/mysore masala dosa.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+             
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Mysore Masala Dosa"
+        data-price="60"
+        data-img="img/catagory-img/mysore masala dosa.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+<!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Tomato Uttapam</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 43/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/tomato uttapam.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+             
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Tomato Uttapam"
+        data-price="43"
+        data-img="img/catagory-img/tomato uttapam.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Medu Wada Sambhar</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 43/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/medu wada.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+              
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Medu Wada Sambhar"
+        data-price="43"
+        data-img="img/catagory-img/medu wada.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Schezwan Dosa</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 50/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/schezwan dosa.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+             
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Schezwan Dosa"
+        data-price="50"
+        data-img="img/catagory-img/schezwan dosa.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80"style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Cheese Dosa</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 60/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/cheese dosa.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+            
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Cheese Dosa"
+        data-price="60"
+        data-img="img/catagory-img/cheese dosa.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+      
+
+
+    </div>
+  </div>
+</section>
+<h2 class="menu-heading text-center mt-5 mb-4">Chinese</h2>
+
+<section class="menu-section py-4" style="background: #fff8f3;">
+  <div class="container">
+    <div class="row justify-content-center g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-lg border-0 rounded-4 h-100">
+          <div class="card-body p-4 text-center">
+            <h4 class="text-danger mb-2">Paneer Chilli Dry</h4>
+            <p class="mb-2">Price: ₹95</p>
+            <img src="img/catagory-img/paneer chilli.jpeg" class="img-fluid rounded mb-3" alt="">
+            <button class="btn btn-outline-danger w-100 add-to-wishlist"
+              data-name="Paneer Chilli Dry"
+              data-price="95"
+              data-img="img/catagory-img/paneer chilli.jpeg">
+              <i class="fa fa-heart"></i> Add to Wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-lg border-0 rounded-4 h-100">
+          <div class="card-body p-4 text-center">
+            <h4 class="text-danger mb-2">Veg Manchurian Dry</h4>
+            <p class="mb-2">Price: ₹69</p>
+            <img src="img/catagory-img/manchurian.jpeg" class="img-fluid rounded mb-3" alt="">
+            <button class="btn btn-outline-danger w-100 add-to-wishlist"
+              data-name="Veg Manchurian Dry"
+              data-price="69"
+              data-img="img/catagory-img/manchurian.jpeg">
+              <i class="fa fa-heart"></i> Add to Wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add other cards here in the same pattern -->
+       <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Veg Fried Rice</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 69/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/fried rice.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+             
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Veg Fried Rice"
+        data-price="69"
+        data-img="img/catagory-img/fried rice.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Veg Hakka Noodles</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 69/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/hakka noodles.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+              
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Veg Hakka Noodles"
+        data-price="69"
+        data-img="img/catagory-img/hakka noodles.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Schezwan Noodles</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 83/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/schezwan noodles.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Schezwan Noodles"
+        data-price="83"
+        data-img="img/catagory-img/schezwan noodles.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80"style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Veg Crispy</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 76/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/veg crispy.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+              
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Veg Crispy"
+        data-price="76"
+        data-img="img/catagory-img/veg crispy.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<h2 class="menu-heading">Chaat</h2>
+
+  <section class="register" class="d-flex align-items-center justify-content-center" style="background: #fff8f3;">
+
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Chowpatty Bhel</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 38/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/bhel.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Chowpatty Bhel"
+        data-price="38"
+        data-img="img/catagory-img/bhel.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Chinese Bhel</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 63/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/chineese bhel.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+             
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Chineese Bhel"
+        data-price="63"
+        data-img="img/catagory-img/chineese bhel.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+<!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Sev Puri</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 38/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/sev puri.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+              
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Sev Puri"
+        data-price="38"
+        data-img="img/catagory-img/sev puri.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Dahi Batata Puri</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 50/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/dahi puri.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+           
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Dahi Batata Puri"
+        data-price="50"
+        data-img="img/catagory-img/dahi puri.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Dahi Bhel</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 50/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/dahi bhel.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+           
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Dahi Bhel"
+        data-price="50"
+        data-img="img/catagory-img/dahi bhel.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80"style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Pani Puri</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 38/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/pani puri.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Pani Puri"
+        data-price="38"
+        data-img="img/catagory-img/pani puri.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+  <h2 class="menu-heading">Beverages</h2>
+
+  <section class="register" class="d-flex align-items-center justify-content-center" style="background: #fff8f3;">
+
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Tea</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 15/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/tea.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Tea"
+        data-price="15"
+        data-img="img/catagory-img/tea.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Hot Coffee</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 19/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/coffee.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+            
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Hot Coffee"
+        data-price="19"
+        data-img="img/catagory-img/coffee.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+<!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Hot Chocolate</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 50/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/hot chocolate.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+           
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Hot Chocolate"
+        data-price="50"
+        data-img="img/catagory-img/hot chocolate.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Watermelon Juice</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 50/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/watermelon juice.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+            
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Watermelon Juice"
+        data-price="50"
+        data-img="img/catagory-img/watermelon juice.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80" style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Orange Juice</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 58/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/orange juice.jpeg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+             
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Orange Juice"
+        data-price="58"
+        data-img="img/catagory-img/orange juice.jpeg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 menu-item">
+        <div class="card shadow-lg border-0 rounded-4 h-80"style="margin-bottom: 20px;">
+          <div class="card-body p-4">
+            <h4 class="text-center mb-2 text-danger">Pineapple Juice</h4>
+            <form>
+              <div class="form-group mb-3">
+                <label for="fullname" style="display: block;">Price: 58/-</label>
+                
+              </div>
+
+              <div class="form-group mb-3">
+                <img src="img/catagory-img/pineapple.jpg" alt="" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+              </div>
+
+            
+<button class="btn btn-outline-danger w-100 add-to-wishlist"
+        data-name="Pineapple Juice"
+        data-price="58"
+        data-img="img/catagory-img/pineapple.jpg">
+        <i class="fa fa-heart"></i> Add to Wishlist
+      </button>
+
+            </form>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+    
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ⭐ Star rating script -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const stars = document.querySelectorAll(".star-rating .star");
+    const ratingInput = document.getElementById("reviewRating");
+
+    stars.forEach(star => {
+      star.addEventListener("click", () => {
+        const rating = parseInt(star.getAttribute("data-value"));
+        ratingInput.value = rating;
+
+        // highlight selected stars
+        stars.forEach(s => {
+          s.classList.toggle("active", parseInt(s.getAttribute("data-value")) <= rating);
+        });
+      });
+    });
+  });
+</script>
+<!-- ✅ Scripts -->
+<script>
+  // ---------- STAR RATING ----------
+
+document.addEventListener("DOMContentLoaded", () => {
+  const stars = document.querySelectorAll("#modalStarContainer i");
+  const ratingInput = document.getElementById("modalReviewRating");
+
+  stars.forEach((star, index) => {
+    star.addEventListener("mouseover", () => {
+      stars.forEach((s, i) => s.style.color = i <= index ? "#f5c518" : "#ccc");
+    });
+
+    star.addEventListener("mouseout", () => {
+      const selected = parseInt(ratingInput.value) || 0;
+      stars.forEach((s, i) => s.style.color = i < selected ? "#f5c518" : "#ccc");
+    });
+
+    star.addEventListener("click", () => {
+      ratingInput.value = index + 1;
+      stars.forEach((s, i) => s.style.color = i <= index ? "#f5c518" : "#ccc");
+    });
+  });
+});
+
+  // ---------- CAPTURE ITEM NAME when Add Review clicked ----------
+  document.querySelectorAll('[data-bs-target="#reviewModal"]').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const cardBody = this.closest('.card-body');
+      if (!cardBody) return;
+      const titleEl = cardBody.querySelector('h4, h5, .card-title');
+      const itemName = titleEl ? titleEl.innerText.trim() : '';
+      document.getElementById('currentItem').value = itemName;
+
+      // Reset form fields when modal opens
+      document.getElementById('reviewForm').reset();
+      document.getElementById('reviewRating').value = '';
+      document.querySelectorAll('#starContainer .star').forEach(s => s.classList.remove('active'));
+    });
+  });
+
+  // ---------- SUBMIT REVIEW to Firestore ----------
+  document.getElementById('reviewForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const itemName = document.getElementById('currentItem').value;
+    const reviewText = document.getElementById('reviewText').value.trim();
+    const reviewRating = parseInt(document.getElementById('reviewRating').value);
+
+    if (!itemName || !reviewText || !reviewRating) {
+      alert('⚠️ Please choose a rating and write a review.');
+      return;
+    }
+
+    try {
+      await db.collection('reviews').add({
+        item: itemName,
+        text: reviewText,
+        rating: reviewRating,
+        timestamp: new Date()
+      });
+
+      alert(`✅ Review for ${itemName} added!`);
+      this.reset();
+      document.querySelectorAll('#starContainer .star').forEach(s => s.classList.remove('active'));
+
+      // Close modal
+      const modalEl = document.getElementById('reviewModal');
+      const modalInstance = bootstrap.Modal.getInstance(modalEl);
+      if (modalInstance) modalInstance.hide();
+
+    } catch (err) {
+      console.error('Error writing review to Firestore:', err);
+      
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('load', () => {
+    const wishlistKey = 'wishlist1';
+    const buttons = document.querySelectorAll('.add-to-wishlist');
+
+    buttons.forEach(btn => {
+      // Make sure it doesn’t submit the form
+      btn.setAttribute('type', 'button');
+
+      // Remove any old event listeners before adding new one
+      const newBtn = btn.cloneNode(true);
+      btn.parentNode.replaceChild(newBtn, btn);
+    });
+
+    // Select clean buttons again
+    document.querySelectorAll('.add-to-wishlist').forEach(button => {
+      button.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopImmediatePropagation(); //  stops ALL other handlers
+
+        const item = {
+          name: button.dataset.name,
+          price: button.dataset.price,
+          img: button.dataset.img
+        };
+
+        let wishlist = JSON.parse(localStorage.getItem(wishlistKey)) || [];
+        const exists = wishlist.some(i => i.name === item.name);
+
+        if (!exists) {
+          wishlist.push(item);
+          localStorage.setItem(wishlistKey, JSON.stringify(wishlist));
+          alert(`${item.name} added to wishlist ❤️`);
+        } else {
+          alert(`${item.name} is already in wishlist!`);
+        }
+      });
+    });
+  });
+</script>
+<!-- 🍴 Unified Reviews Modal (Updated + Centered Stars) -->
+<div class="modal fade" id="viewReviewsModal" tabindex="-1" aria-labelledby="viewReviewsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 shadow-lg">
+      
+      <!-- Header -->
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title fw-semibold" id="viewReviewsLabel">
+          Reviews for <span id="dishTitle"></span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+
+        <!-- Existing Reviews -->
+        <div id="reviewsFeed" class="mb-4" style="max-height: 350px; overflow-y: auto;">
+          <p class="text-muted text-center">Loading reviews...</p>
+        </div>
+
+        <!-- Divider -->
+        <hr class="my-3">
+
+        <!-- Add New Review -->
+        <form id="addDishReviewForm" class="text-center">
+          <h6 class="fw-bold mb-3 text-danger">Add Your Review</h6>
+
+          <!-- ⭐ Star Rating (Centered) -->
+          <div class="review-stars justify-content-center mb-3" id="modalStarContainer">
+            <i class="fa fa-star" data-value="1"></i>
+            <i class="fa fa-star" data-value="2"></i>
+            <i class="fa fa-star" data-value="3"></i>
+            <i class="fa fa-star" data-value="4"></i>
+            <i class="fa fa-star" data-value="5"></i>
+          </div>
+          <input type="hidden" id="modalReviewRating" required>
+
+          <!-- Review Text -->
+          <div class="mb-3">
+            <textarea id="newReviewText" class="form-control rounded-3" rows="3" placeholder="Write your thoughts..." required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-danger rounded-pill fw-semibold">
+              Post Review
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.star-rating .star').forEach(star => {
+  star.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    document.getElementById('reviewRating').value = value;
+
+    // reset all stars
+    this.parentNode.querySelectorAll('.star').forEach(s => s.classList.remove('active'));
+
+    // highlight selected and previous stars
+    for (let i = 0; i < value; i++) {
+      this.parentNode.querySelectorAll('.star')[i].classList.add('active');
+    }
+  });
+});
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const wishlistKey = 'wishlist1'; 
+    const wishlistButtons = document.querySelectorAll('.add-to-wishlist');
+
+    wishlistButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const item = {
+          name: this.getAttribute('data-name'),
+          price: this.getAttribute('data-price'),
+          img: this.getAttribute('data-img')
+        };
+
+        // Get existing wishlist or create new
+        let wishlist = JSON.parse(localStorage.getItem(wishlistKey)) || [];
+
+        // Check if item already exists
+        const exists = wishlist.some(i => i.name === item.name);
+        if (!exists) {
+          wishlist.push(item);
+          localStorage.setItem(wishlistKey, JSON.stringify(wishlist));
+          alert(`${item.name} added to wishlist ❤️`);
+        } else {
+          alert(`${item.name} is already in wishlist!`);
+        }
+      });
+    });
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const openSearchBtn = document.querySelector(".search_button .searchBtn");
+  const closeSearchBtn = document.querySelector(".search-hidden-form .searchBtn");
+  const searchFormContainer = document.querySelector(".search-hidden-form");
+  const searchInput = document.getElementById("search-anything");
+
+  // --- OPEN SEARCH BAR ---
+  if (openSearchBtn) {
+    openSearchBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      searchFormContainer.style.display = "block";
+      searchInput.focus();
+    });
+  }
+
+  // --- CLOSE SEARCH BAR ---
+  if (closeSearchBtn) {
+    closeSearchBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      searchFormContainer.style.display = "none";
+      searchInput.value = "";
+      filterMenu("");
+    });
+  }
+
+  // --- PREVENT FORM RELOAD ---
+  const searchForm = searchFormContainer?.querySelector("form");
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
+  }
+
+  // --- LIVE SEARCH FILTER ---
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const query = this.value.toLowerCase().trim();
+      filterMenu(query);
+    });
+  }
+
+  // --- MAIN FILTER FUNCTION ---
+  function filterMenu(query) {
+    const cards = document.querySelectorAll(".menu-item");
+    const headings = document.querySelectorAll(".menu-heading"); // ✅ class used here
+    const sections = document.querySelectorAll(".register"); // ✅ each section
+
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      if (text.includes(query) || query === "") {
+        card.style.display = "block";
+        visibleCount++;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    // --- Hide headings when searching ---
+    headings.forEach(h => {
+      h.style.display = query ? "none" : "block";
+    });
+
+    // --- Adjust section layout dynamically ---
+    sections.forEach(section => {
+      if (query) {
+        section.style.minHeight = "auto";
+        section.style.paddingTop = "20px";
+      } else {
+        section.style.minHeight = "80vh";
+        section.style.paddingTop = "0";
+      }
+    });
+
+    // --- Center visible results neatly ---
+    const menuContainer = document.querySelector(".menu-area");
+    if (menuContainer) {
+      menuContainer.style.display = "flex";
+      menuContainer.style.flexWrap = "wrap";
+      menuContainer.style.justifyContent = "center";
+      menuContainer.style.alignItems = "flex-start";
+      menuContainer.style.gap = "20px";
+    }
+  }
+});
+</script>
+<script>
+  function setCurrentDish(dishName) {
+    document.getElementById('currentItem').value = dishName;
+  }
+</script>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js"></script>
+
+
+
+<!-- Custom Firebase Logic -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+import { 
+  getFirestore, collection, addDoc, doc, setDoc, query, orderBy, onSnapshot, serverTimestamp 
+} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+// 🔹 Firebase Config
+const firebaseConfig = {
+  apiKey: "AIzaSyBy5yfr3yYuMSDFHWwp0LdRhQASe2EKx78",
+  authDomain: "campusbites-a7d47.firebaseapp.com",
+  projectId: "campusbites-a7d47",
+  storageBucket: "campusbites-a7d47.appspot.com",
+  messagingSenderId: "287799383807",
+  appId: "1:287799383807:web:80dcc43f75b5e226241eca"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+let currentDish = "";
+
+// 🟢 Logged-in check
+onAuthStateChanged(auth, async (user) => {
+  if (!user) {
+    alert("Please log in first!");
+    window.location.href = "login.html";
+    return;
+  }
+
+  // ensure user profile exists
+  await setDoc(doc(db, "loggedInUsers", user.uid), {
+    email: user.email,
+    displayName: user.displayName || user.email.split("@")[0],
+    createdAt: serverTimestamp()
+  }, { merge: true });
+});
+
+// 🟣 Add “View Reviews” buttons under each dish
+document.querySelectorAll(".menu-item").forEach(card => {
+  const btn = document.createElement("button");
+  btn.textContent = "Post Reviews";
+  btn.className = "btn btn-outline-dark w-100 mt-2";
+  btn.setAttribute("data-bs-toggle", "modal");
+  btn.setAttribute("data-bs-target", "#viewReviewsModal");
+  btn.addEventListener("click", () => {
+    const dishName = card.querySelector("h4").innerText.trim();
+    document.getElementById("dishTitle").textContent = dishName;
+    loadReviews(dishName);
+  });
+  card.querySelector(".card-body").appendChild(btn);
+});
+
+// 🔵 Load existing reviews
+function loadReviews(dishName) {
+  const feed = document.getElementById("reviewsFeed");
+  feed.innerHTML = "<p class='text-muted text-center'>Loading reviews...</p>";
+
+  const q = query(collection(db, "reviews", dishName, "userReviews"), orderBy("timestamp", "desc"));
+  onSnapshot(q, (snapshot) => {
+    if (snapshot.empty) {
+      feed.innerHTML = "<p class='text-muted text-center'>No reviews yet. Be the first!</p>";
+      return;
+    }
+
+    feed.innerHTML = "";
+    snapshot.forEach(docSnap => {
+      const r = docSnap.data();
+      const date = r.timestamp?.toDate ? r.timestamp.toDate().toLocaleString() : "";
+      feed.innerHTML += `
+        <div class="border rounded p-2 mb-2 bg-light">
+          <strong class="text-danger">${r.username || "Anonymous"}</strong>
+          <p class="mb-1">${r.reviewText}</p>
+          <small class="text-muted">⭐ ${r.rating || 0}/5 · ${date}</small>
+        </div>
+      `;
+    });
+  });
+}
+
+// ⭐ Star rating logic inside modal
+document.querySelectorAll("#modalStarContainer .star").forEach(star => {
+  star.addEventListener("click", () => {
+    const val = parseInt(star.getAttribute("data-value"));
+    document.getElementById("modalReviewRating").value = val;
+    document.querySelectorAll("#modalStarContainer .star").forEach(s => {
+      s.classList.toggle("active", parseInt(s.getAttribute("data-value")) <= val);
+    });
+  });
+});
+
+// 🟠 Post new review from inside modal
+document.getElementById("addDishReviewForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const user = auth.currentUser;
+  if (!user) {
+    alert("Please log in to post a review!");
+    return;
+  }
+
+  const text = document.getElementById("newReviewText").value.trim();
+  const rating = parseInt(document.getElementById("modalReviewRating").value);
+  const dishName = document.getElementById("dishTitle").textContent;
+
+  if (!text || !rating) {
+    alert("Please enter both rating and text!");
+    return;
+  }
+
+  try {
+    // save in both user + global reviews
+    await addDoc(collection(db, "loggedInUsers", user.uid, "reviews"), {
+      dishName,
+      reviewText: text,
+      rating,
+      timestamp: serverTimestamp(),
+      username: user.displayName || user.email.split("@")[0]
+    });
+
+    await addDoc(collection(db, "reviews", dishName, "userReviews"), {
+      reviewText: text,
+      rating,
+      username: user.displayName || user.email.split("@")[0],
+      uid: user.uid,
+      timestamp: serverTimestamp()
+    });
+
+    document.getElementById("newReviewText").value = "";
+    document.getElementById("modalReviewRating").value = "";
+    document.querySelectorAll("#modalStarContainer .star").forEach(s => s.classList.remove("active"));
+  } catch (err) {
+    console.error("Error posting review:", err);
+    alert("Could not save review. Check console.");
+  }
+});
+</script>
+
+
+
+
+<footer class="footer_area py-4" style="background-color:#fff8f3; position:relative; z-index:10; text-align:center;">
+  <div class="container-fluid text-center">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <hr style="margin:30px 0; border-color:#d62300; width:100vw; position:relative; left:50%; transform:translateX(-50%);">
+
+        <p class="mb-0" style="color:#333;">
+          &copy; 2025 <strong><span>Campus Bites</span></strong>. All Rights Reserved
+        </p>
+        <p class="mt-1 small" style="color:#d62300;">
+          Made with ❤️ for campus foodies
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/jquery/jquery-2.2.4.min.js"></script>
+  <script src="js/bootstrap/popper.min.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="js/others/plugins.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
+  <script src="js/google-map/map-active.js"></script>
+  <script src="js/active.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
